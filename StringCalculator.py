@@ -1,8 +1,6 @@
 import re
 
 class StringCalculator:
-
-    @staticmethod
     def add(numbers):
         if not numbers:
             return 0
