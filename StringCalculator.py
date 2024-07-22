@@ -39,3 +39,14 @@ def calculate_sum(number_list):
             total += include_number(num)
     handle_negatives(negatives)
     return total
+
+def check_negative(num, negatives):
+    if num < 0:
+        negatives.append(num)
+
+def include_number(num):
+    return num if num <= 1000 else 0
+
+def handle_negatives(negatives):
+    if negatives:
+        raise ValueError(f"negatives not allowed: {negatives}")
